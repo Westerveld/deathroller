@@ -8,8 +8,8 @@ After downloading this repository, set up a bot for discord following this [tuto
 The create a config.json with the following:
 
     {
-        "token" : "your bot token"
-        "clientId" : "The client id for your bot"
+        "token" : "your bot token",
+        "clientId" : "The client id for your bot",
         "guildId" : "The guild id for the server you want the bot on"
     }
     
