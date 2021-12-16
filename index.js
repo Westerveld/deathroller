@@ -30,7 +30,7 @@ client.on('interactionCreate', async interaction => {
         console.log(result);
         result = Math.round(result);
         console.log(result);
-		await interaction.editReply("💀" + interaction.user.username + " has rolled 1-"+num + " : " + result+" " + (result > 1 ? "🥳" : "💀"));
+		await interaction.editReply((result > 1 ? "🥳 " : "💀 ") + interaction.user.username + " has rolled 1-"+num + " : " + result+" " + (result > 1 ? "🥳" : "💀"));
 	} 
 });
 
