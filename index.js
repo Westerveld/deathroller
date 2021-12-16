@@ -19,19 +19,18 @@ client.on('interactionCreate', async interaction => {
     //Death roll command
 	if (commandName === 'dr' || commandName === 'roll' || commandName === 'deathroll') {
         const num = interaction.options.getInteger('num');
-        await interaction.reply(interaction.user.username + " is rolling 1-"+ num +".");
+        await interaction.reply("💀" +interaction.user.username + " is rolling 1-"+ num +"💀");
         await wait(500);
-        await interaction.editReply(interaction.user.username + " is rolling 1-"+ num +"..");
+        await interaction.editReply("💀" +interaction.user.username + " is rolling 1-"+ num +"💀💀");
         await wait(500);
-        await interaction.editReply(interaction.user.username + " is rolling 1-"+ num +"...");
+        await interaction.editReply("💀" +interaction.user.username + " is rolling 1-"+ num +"💀💀💀");
         await wait(500);
         //random sometimes goes closer to 0 than 1, but we want to go to 1. add .5 so the lowest we can go is 0.5f, and will round up to 1
         var result = (Math.random() * num) + 0.5;
         console.log(result);
         result = Math.round(result);
-        
         console.log(result);
-		await interaction.editReply(interaction.user.username + " has rolled 1-"+num + " : " + result);
+		await interaction.editReply("💀" + interaction.user.username + " has rolled 1-"+num + " : " + result+"💀");
 	} 
 });
 
